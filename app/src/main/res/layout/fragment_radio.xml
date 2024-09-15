@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/IslamicBackground">
+    <ImageView
+        android:id="@+id/radio_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/radio_image"
+        android:layout_marginTop="190dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/radio_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        style="@style/TextStyle"
+        android:text="اذاعة القران الكريم"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radio_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layoutDirection="ltr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_text"
+        >
+        <ImageView
+            style="@style/RadioIcons"
+            android:id="@+id/ic_prev"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_prev"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            />
+        <ImageView
+            style="@style/RadioIcons"
+            android:id="@+id/ic_play"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_play"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+        <ImageView
+            style="@style/RadioIcons"
+            android:id="@+id/ic_next"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_next"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            />
+        
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

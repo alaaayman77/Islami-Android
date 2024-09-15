@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Islami-Android</string>
+    <string name="islami">Islami</string>
+    <string name="quran">Quran</string>
+    <string name="hadeth">Hadeth</string>
+    <string name="tasbeeh">Tasbeeh</string>
+    <string name="radio">Radio</string>
 </resources>
